@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>counter</title>
+        <script>
+
+            let counter = 0;
+
+            function count() {
+                counter++;
+               document.querySelector('h1').innerHTML = counter;
+
+               if (counter % 5 === 0) {
+                alert(`count is now ${counter}`);
+               }
+            }
+
+            document.querySelector('boton').onclick = count;
+
+
+        </script>
+    
+    </head>
+    <body>
+        <h1>0!</h1>
+        <button onclick="count ()">CLICK HERE</button>
+    </body>
+</html> 
